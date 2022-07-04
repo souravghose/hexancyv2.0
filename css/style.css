@@ -4,10 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* unique styles */
+a{
+    text-decoration: none;
+
+}
 :root {
    --color-primary: #5956e9;
    --color-primary-sub: #3937b5;
    --light-white: #ffffff;
+   --dark: #27272E;
    --color-dark: #000000;
    --color-gray: #525260;
   }
@@ -126,7 +131,7 @@ header{
    
 }
 .banner-content p{
-    color:vr(--color-gray);
+    color:var(--color-gray);
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -161,4 +166,118 @@ header{
     z-index: -1;
     right:7%;
     top: -2%;
+}
+
+
+/* service area */
+#service{
+    margin-top: -16px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background: var(--dark);
+    position: relative;
+    z-index: 1;
+}
+.serviceLine{
+    
+    top: 5%;
+    right: 0%;
+    position: absolute;
+    z-index: -1;
+}
+.serviceBubble{
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.serviceBubbleCircle{
+    top: 48%;
+    left: 5.5%;
+    position: absolute;
+    z-index: 1;
+}
+.service-information{
+    padding-right: 40px;
+}
+.title{
+    font-family: 'DM Sans', sans-serif;
+    color: var(--light-white);
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.subtitle{
+    color: #c75c6f;
+    font-weight: 500;
+    font-size: 23px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.section-paragraph{
+    color:var(--color-gray);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom:40px;
+
+   
+}
+.service-category{
+    padding: 40px 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.service-category:hover .service-link{
+    color: #c75c6f;
+}
+.service-category:hover .service-paragraph{
+    color: var(--light-white);
+    transition: all 0.3s ease-in;
+}
+.service-category:hover{
+    background:  #232326; 
+}
+.service-content .subtitle{
+    color: var(--light-white);
+}
+.service-content .subtitle:hover{
+    color: var(--color-primary);
+    transition: all 0.3s ease-in;
+}
+.service-paragraph{
+    font-family: 'Poppins', sans-serif;
+    color:#676774;
+    font-size: 17px;
+    margin: 35px 0px;
+}
+.service-link{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-white);
+    position: relative;
+    padding: 50px;
+    transition:all 0.3s ease-in-out;
+
+}
+.service-link::before{
+    content: '';
+    width: 34px;
+    height: 1px;
+    background-color: var(--light-white);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+    
+}
+.service-link:hover{
+    color: #c75c6f;
 }
