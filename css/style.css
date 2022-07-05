@@ -15,6 +15,8 @@ a{
    --dark: #27272E;
    --color-dark: #000000;
    --color-gray: #525260;
+   --light-gray: rgb(140, 135, 135);
+   
   }
 
 /* buttons */
@@ -179,7 +181,6 @@ header{
     z-index: 1;
 }
 .serviceLine{
-    
     top: 5%;
     right: 0%;
     position: absolute;
@@ -280,4 +281,95 @@ header{
 }
 .service-link:hover{
     color: #c75c6f;
+}
+
+
+/* case study slider */
+#caseStudy{
+    padding: 50px 0px;
+    margin: 60px 0px;
+   
+}
+.caseStudyContent .title{
+    line-height: 60px;
+}
+.caseStudyParagraph{
+    font-size: 16px;
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    /* padding-right: 30px; */
+}
+.caseStudyContent .hexancy-btn{
+    box-shadow: none;
+
+}
+.counter-up{
+    margin: 60px 0px;
+}
+.first-counter{
+    margin-right: 120px;
+    position: relative;
+}
+.first-counter::after{
+    content: '';
+    width: 1px;
+    height: 70px;
+    background-color: var(--light-gray);
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    /* -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); */
+    transform: translateX(60%);
+    margin-right: -50px;
+}
+.counter-number{
+    font-family: 'Poppins', sans-serif;
+    color: #c75c6f;
+    font-size: 3em;
+}
+.counter-title{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-gray);
+    font-size: 16px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    margin-right: 0%;
+    margin-bottom: 0;
+    margin-left: 7%;
+    list-style: none;
+}
+
+.carousel-indicators [data-bs-target]{
+  
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        margin-right: 20px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: var(--color-primary);
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 50%;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+}
+.carousel-indicators .active {
+    opacity: 1;
 }
