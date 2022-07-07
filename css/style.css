@@ -21,6 +21,7 @@ a{
    --light-gray: rgb(140, 135, 135);
    --bg-color-light: #ECF2F6;
    --text-color-gray: #99A1AA;
+   --color-accent: #FFDC60;
    
   }
 .mb-10{
@@ -519,8 +520,7 @@ input[type=tel]:focus{
    background-position-y: 0%;
    
 }
-.testimonial-main{
-    }
+
 .testimonialParagraph{
         font-size: 18px;
         color: var(--text-color-gray);
@@ -561,3 +561,108 @@ blockquote.quotes{
     margin-top: 0px;
 }
 
+/* pricing plan start */
+#pricingPlan{
+    padding: 100px 0px;
+    background: var(--bg-color-light);
+}
+.pricing-paragraph{
+    font-size: 18px!important;
+    color: var(--text-color-gray)!important;
+    font-family: 'Poppins', sans-serif!important;
+}
+.billing-tab{
+    background: var(--light-white);
+    padding: 5px 5px;
+    border-radius: 50px;
+    border: 1px solid #E3E6E9;
+
+}
+.billing-tab .hexancy-btn{
+    box-shadow: none;
+    border: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    margin-right: 0px;
+}
+.pricing-table{
+    padding: 40px 70px;
+    border-radius: 40px;
+    background-color:var(--light-white);
+    margin-right: 25px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+
+}
+.pricing-table:hover{
+    background: var(--color-primary);
+    color: var(--light-white)!important;
+}
+.pricing-table-header .title{
+    color: var(--color-primary);
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+}
+.pricing-table:hover .pricing-table-header .title{
+    color: var(--light-white)!important;
+}
+.pricing-paragraph{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+.pricing-table:hover .pricing-table-header .pricing-paragraph{
+    color: var(--light-white)!important;
+}
+.pricing-details{
+    padding-top: 30px;
+    border-top: 1px solid #E3E6E9;
+}
+.pricing-table:hover .pricing-details{
+    border-top: 1px solid var(--text-color-gray);
+}
+.pricing-details .title{
+    font-size: 60px;
+}
+.pricing-table:hover .pricing-details .title{
+    color: var(--light-white)!important;
+}
+span.billing-duration{
+    font-size: 14px;
+    color: var(--text-color-gray);
+    margin-left: 5px;
+}
+.pricing-table:hover span.billing-duration{
+    color: var(--light-white)!important;
+}
+.pricing-details .hexancy-btn{
+    box-shadow: none;
+    background: var(--light-white);
+    color: var(--dark);
+    border: 1px solid #99A1AA;
+    font-size: 16px;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.pricing-table .hexancy-btn:hover{
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+.features{
+    padding-top: 30px;
+}
+.custom-list-item{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-gray);
+    border: none;
+    margin-bottom: 5px;
+    background: none;
+}
+.pricing-table:hover .custom-list-item{
+   color: var(--light-white);
+}
