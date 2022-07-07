@@ -508,3 +508,56 @@ input[type=tel]:focus{
     font-weight: 500;
     color: var(--light-white)
 }
+
+/* testimonial start */
+#testimonial{
+    padding-bottom: 100px;
+    background: url('/assets/others/bubble-1.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+   background-position-x: 70%;
+   background-position-y: 0%;
+   
+}
+.testimonial-main{
+    }
+.testimonialParagraph{
+        font-size: 18px;
+        color: var(--text-color-gray);
+        font-family: 'Poppins', sans-serif;
+}
+.single-testimonial{
+    margin-top: 30px;
+    border-top: 2px solid transparent;
+    padding-top: 30px;
+    padding-right: 20px;
+    transition: all 0.3s linear;
+    
+}
+.single-testimonial:hover{
+    border-color: var(--color-primary);
+}
+blockquote.quotes{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.profileName{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:var(--color-dark);
+    margin-left: 17px;
+    margin-bottom: 0px;
+}
+.designation{
+    font-weight: 400;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:var(--text-color-gray);
+    margin-left: 17px;
+    margin-top: 0px;
+}
+
