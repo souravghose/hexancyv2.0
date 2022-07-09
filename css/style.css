@@ -5,7 +5,8 @@
 
 /* unique styles */
 body{
-    overflow-x: hidden;
+    width: 100%;
+    overflow-x:hidden;
 }
 a{
     text-decoration: none;
@@ -665,4 +666,126 @@ span.billing-duration{
 }
 .pricing-table:hover .custom-list-item{
    color: var(--light-white);
+}
+
+/* top clients */
+#topClients{
+    background: var(--dark);
+    padding: 120px 0px;
+    width: 100%;
+}
+
+/* call to action area */
+
+#callToAction{
+    
+    padding: 130px 0px;
+    background: var(--color-primary);
+    position: relative;
+    height: 730px;
+    width: 100%;
+    border-bottom: 1px solid var(--bg-color-light);
+    z-index: 1;
+
+}
+.topBG{
+    position: absolute;
+    top: 0;
+    left: 32%;
+    z-index: -1;
+}
+.bubble-callOne{
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+    right: 15%;
+    animation-name: bubbleCallOne;
+   animation-duration: 15s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+    
+}
+.bubble-callTwo{
+    position: absolute;
+    z-index: -2;
+    top: 55%;
+    right: 9%;
+    animation-name: bubbleCallTwo;
+   animation-duration: 19s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-delay: 1s;
+}
+@keyframes bubbleCallOne{
+    0%{
+     top: 35%;
+     right: 15%;
+    }
+     50%{
+      top: 35%;
+      right: 55%;
+    }
+      70%{
+     top: 10%;
+     right: 15%;
+    }
+    100%{
+     top: 35%;
+     right:15%;
+    }   
+ }
+ @keyframes bubbleCallTwo{
+    0%{
+        top: 55%;
+        right: 9%;
+    }
+     50%{
+      top: 55%;
+      right: 68%;
+    }
+      70%{
+     top: 32%;
+     right: 68%;
+    }
+    100%{
+     top: 55%;
+     right:9%;
+    }    
+ }
+.hexancy-project-btn{
+    box-shadow: none;
+    background: var(--light-white);
+    color: var(--dark);
+    border: 1px solid #99A1AA;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+.hexancy-project-btn:hover{
+    background-color: var(--color-accent);
+    border-color: var(--color-accent)
+}
+
+.paralax-image{
+    position: absolute;
+    left: 17%;
+    bottom:-12%;
+    z-index: 1;
+}
+
+.paralax-image-two{
+    position: absolute;
+    left: 33%;
+    bottom:-12%;
+    z-index: 0;
+}
+.paralax-image-three{
+    position: absolute;
+    right: 14%;
+    bottom:-12%;
+    z-index: 0;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
 }
