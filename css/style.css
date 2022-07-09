@@ -586,8 +586,8 @@ blockquote.quotes{
     margin-right: 0px;
 }
 .pricing-table{
-    padding: 40px 70px;
-    border-radius: 40px;
+    padding: 50px 40px;
+    border-radius: 30px;
     background-color:var(--light-white);
     margin-right: 25px;
     transition: all 0.5s linear;
