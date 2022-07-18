@@ -966,6 +966,10 @@ ul{
 
 /* responsive start */
 @media (max-width: 575.98px) {
+    body{
+        width: 100%;
+        overflow-x:hidden;
+    }
     #banner{
         flex-wrap: wrap;
     }
