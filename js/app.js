@@ -36,3 +36,58 @@ function changeTheMonthlyPlan(e){
     yearlyBtn.style.color = '#000'
 }
     
+
+
+// contact form
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+let tel = document.getElementById('tel');
+
+const freeQuoteBtn = document.getElementById('freeQuoteBtn');
+freeQuoteBtn.addEventListener('click', statusUpdate);
+function statusUpdate(e){
+   if(name.value!='' && email.value!='' && tel.value!=''){
+    document.getElementById('custom-toast').style.display = 'block';
+    document.getElementById('custom-toast').style.color = '#21b321';
+    document.getElementById('custom-toast').style.fontSize = '16px';
+
+    document.getElementById('custom-toast').innerHTML = 'We recieved your information. Catch up with you soon.';
+    document.getElementById('custom-toast').style.transition="all 0.3s linear";
+    setTimeout(() => {
+        const box = document.getElementById('custom-toast');
+      
+        // 👇️ removes element from DOM
+        box.style.display = 'none';
+      
+        // 👇️ hides element (still takes up space on page)
+        // box.style.visibility = 'hidden';
+      }, 1500); 
+    name.value = '';
+    email.value = '';
+    tel.value = '';
+
+
+   }
+   else{
+    document.getElementById('custom-toast').style.display = 'block';
+    document.getElementById('custom-toast').style.color = 'red';
+    document.getElementById('custom-toast').style.fontSize = '16px';
+    document.getElementById('custom-toast').style.transition="all 0.3s linear";
+
+    document.getElementById('custom-toast').innerHTML = 'Required information missed';
+    setTimeout(() => {
+        const box = document.getElementById('custom-toast');
+      
+        // 👇️ removes element from DOM
+        
+        box.style.display = 'none';
+      
+        // 👇️ hides element (still takes up space on page)
+        // box.style.visibility = 'hidden';
+      }, 1500); 
+    name.value = '';
+    email.value = '';
+    tel.value = '';
+
+   }
+}
