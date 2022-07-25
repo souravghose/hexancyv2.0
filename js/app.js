@@ -54,14 +54,11 @@ function statusUpdate(e){
     document.getElementById('custom-toast').innerHTML = 'We recieved your information. Catch up with you soon.';
     document.getElementById('custom-toast').style.transition="all 0.3s linear";
     setTimeout(() => {
-        const box = document.getElementById('custom-toast');
+        const element = document.getElementById('custom-toast');
       
-        // 👇️ removes element from DOM
-        box.style.display = 'none';
+        element.style.display = 'none';
       
-        // 👇️ hides element (still takes up space on page)
-        // box.style.visibility = 'hidden';
-      }, 1500); 
+      }, 2500); 
     name.value = '';
     email.value = '';
     tel.value = '';
@@ -76,15 +73,12 @@ function statusUpdate(e){
 
     document.getElementById('custom-toast').innerHTML = 'Required information missed';
     setTimeout(() => {
-        const box = document.getElementById('custom-toast');
+        const element = document.getElementById('custom-toast');
       
-        // 👇️ removes element from DOM
         
-        box.style.display = 'none';
+        element.style.display = 'none';
       
-        // 👇️ hides element (still takes up space on page)
-        // box.style.visibility = 'hidden';
-      }, 1500); 
+      }, 2500); 
     name.value = '';
     email.value = '';
     tel.value = '';
