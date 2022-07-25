@@ -983,7 +983,7 @@ ul{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--color-primary);
   }
 
 
