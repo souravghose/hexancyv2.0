@@ -1,5 +1,4 @@
 AOS.init();
-
 // pricing plan
 let yearlyBtn = document.getElementById('yearlyBtn');
 let monthlyBtn = document.getElementById('montylyBtn');
@@ -85,3 +84,8 @@ function statusUpdate(e){
 
    }
 }
+//countUp plugin intialize
+$('.counter').countUp({
+  'time': 1000,
+  'delay': 10
+});
