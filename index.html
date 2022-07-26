@@ -21,7 +21,9 @@
     <link rel="shortcut icon" href="assets/icon/souravghose.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="header">
+      <button id="darkModeBtn"><i class="fa-solid fa-moon"></i></button>
+
         <img class="topHeaderBackground" src="assets/others/bubble-39.png" alt="">
         <nav class="navbar">
             <div class="container">
@@ -29,12 +31,12 @@
                 <h1 class="logo">Hex<span style="color: var(--color-primary)">a</span>ncy</h1>
                 
               </a>
-              
               <button class="btn custom-btn-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <div class="icon-toggler"></div>
                 <div class="icon-toggler-middle"></div>
                 <div class="icon-toggler-last"></div>
               </button>
+
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -45,8 +47,8 @@
         <div class="offcanvas-body">
            <!-- search bar -->
           <div class="form-floating mb-3">
-            <input type="search" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Search...</label>
+            <input type="search" class="form-control" id="floatingInputSearch" placeholder="name@example.com">
+            <label for="floatingInput" class="darkHeading">Search...</label>
           </div>
           
         </div>
@@ -65,8 +67,8 @@
           
 
            <div class="banner-content" data-aos="fade-right"  data-aos-duration="1000">
-            <h1 class="h1">Build beautiful website & mobile apps.</h1>
-            <p class="p">Create live segments and target the right people for messages based on their behaviors.
+            <h1 class="h1 darkHeading">Build beautiful website & mobile apps.</h1>
+            <p class="p darkHeading">Create live segments and target the right people for messages based on their behaviors.
             </p>
             <a href="contactus.html" class="btn hexancy-btn">Get Started</a>
            </div>
@@ -208,26 +210,26 @@
           <!--------------------------
       case study area start 
      ------------------------------->
-      <section id="caseStudy">
+      <section id="caseStudy1">
         <div class="container d-flex justify-content-between align-items-center">
           <div class="caseStudyContent" data-aos="fade-right" data-aos-duration="1300">
             <h3 class="subtitle">Featured Case Study</h3>
-            <h2 class="title" style="color:var(--dark)">Logo, identity & web <br>design for Uber</h2>
-            <p class="caseStudyParagraph mb-5">
+            <h2 class="title darkHeading" style="color:var(--dark)">Logo, identity & web <br>design for Uber</h2>
+            <p class="caseStudyParagraph mb-5 darkHeading">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem tempore vitae! Nam nemo odio quia delectus necessitatibus consequatur natus.
             </p>
-            <p class="caseStudyParagraph mb-5">
+            <p class="caseStudyParagraph mb-5 darkHeading">
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, cum.
             </p>
             <a href="logo-web-design-case-study.html" class="btn hexancy-btn">Read Case Study</a>
             <div class="counter-up d-flex justify-content-start">
                <div class="first-counter">
                 <h5 class="counters counter-number mb-1"><span class="counter">15</span>%</h5>
-                <p class="counter-title">ROI increase</p>
+                <p class="counter-title darkHeading">ROI increase</p>
                </div>
                <div class="second-counter">
                 <h5 class="counters counter-number mb-1"><span class="counter">70</span>k</h5>
-                <p class="counter-title">Monthly website visits</p>
+                <p class="counter-title darkHeading">Monthly website visits</p>
                </div>
             </div>
         </div>
@@ -244,26 +246,26 @@
 <!--------------------------
       case study area start 
      ------------------------------->
-     <section id="caseStudy">
+     <section id="caseStudy2">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="caseStudyContent" data-aos="fade-right" data-aos-duration="1300">
-          <h3 class="subtitle">Featured Case Study</h3>
-          <h2 class="title" style="color:var(--dark)">Website and web<br> Development, Design</h2>
-          <p class="caseStudyParagraph mb-5">
+          <h3 class="subtitle darkHeading">Featured Case Study</h3>
+          <h2 class="title darkHeading" style="color:var(--dark)">Website and web<br> Development, Design</h2>
+          <p class="caseStudyParagraph mb-5 darkHeading">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem tempore vitae! Nam nemo odio quia delectus necessitatibus consequatur natus.
           </p>
-          <p class="caseStudyParagraph mb-5">
+          <p class="caseStudyParagraph mb-5 darkHeading">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, cum.
           </p>
           <a href="web-development-case-study.html" class="btn hexancy-btn">Read Case Study</a>
           <div class="counter-up d-flex justify-content-start">
              <div class="first-counter">
               <h5 class="counters counter-number mb-1"><span class="counter">20</span>%</h5>
-              <p class="counter-title">ROI increase</p>
+              <p class="counter-title darkHeading">ROI increase</p>
              </div>
              <div class="second-counter">
               <h5 class="counters counter-number mb-1"><span class="counter">100</span>k</h5>
-              <p class="counter-title">Monthly website visits</p>
+              <p class="counter-title darkHeading">Monthly website visits</p>
              </div>
           </div>
       </div>
@@ -280,26 +282,26 @@
           <!--------------------------
       case study area start 
      ------------------------------->
-      <section id="caseStudy">
+      <section id="caseStudy3">
         <div class="container d-flex justify-content-between align-items-center">
           <div class="caseStudyContent" data-aos="fade-right" data-aos-duration="1300">
-            <h3 class="subtitle">Featured Case Study</h3>
-            <h2 class="title" style="color:var(--dark)">Branding, website & <br> digital marketing for Apple</h2>
-            <p class="caseStudyParagraph mb-5">
+            <h3 class="subtitle darkHeading">Featured Case Study</h3>
+            <h2 class="title darkHeading" style="color:var(--dark)">Branding, website & <br> digital marketing for Apple</h2>
+            <p class="caseStudyParagraph mb-5 darkHeading">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem tempore vitae! Nam nemo odio quia delectus necessitatibus consequatur natus.
             </p>
-            <p class="caseStudyParagraph mb-5">
+            <p class="caseStudyParagraph mb-5 darkHeading">
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, cum.
             </p>
             <a href="branding-marketing-case-study.html" class="btn hexancy-btn">Read Case Study</a>
             <div class="counter-up d-flex justify-content-start">
                <div class="first-counter">
                 <h5 class="counters counter-number mb-1"><span class="counter">15</span>%</h5>
-                <p class="counter-title">ROI increase</p>
+                <p class="counter-title darkHeading">ROI increase</p>
                </div>
                <div class="second-counter">
                 <h5 class="counter counter-number mb-1"><span class="counter">70</span>k</h5>
-                <p class="counter-title">Monthly website visits</p>
+                <p class="counter-title darkHeading">Monthly website visits</p>
                </div>
             </div>
         </div>
@@ -331,25 +333,25 @@
             <div class="aboutUs-content col-lg-6" data-aos="fade-up" data-aos-duration="1500">
              
               <h5 class="subtitle mb-3">About us</h5>
-              <h3 class="title mb-5" style="color:var(--dark);">We do design, code & develop.</h3>
-              <p class="aboutUsParagraph mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, vero dignissimos. Quam suscipit odit, repellendus accusamus, doloremque reiciendis nihil expedita repudiandae modi omnis maxime explicabo voluptates.</p>
-              <p class="aboutUsParagraph mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, illum eum magni suscipit adipisci non minima odio neque fuga consequuntur.</p>
+              <h3 class="title mb-5 darkHeading" style="color:var(--dark);">We do design, code & develop.</h3>
+              <p class="aboutUsParagraph mb-3 darkHeading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, vero dignissimos. Quam suscipit odit, repellendus accusamus, doloremque reiciendis nihil expedita repudiandae modi omnis maxime explicabo voluptates.</p>
+              <p class="aboutUsParagraph mb-2 darkHeading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, illum eum magni suscipit adipisci non minima odio neque fuga consequuntur.</p>
            </div>
 
            <div class="contact-form col-lg-5 col-sm-12" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                <p id="custom-toast" class="fw-bold" style="display:none">We received your information. Contact with you soon!</p>
-               <h3 class="title">Get a free Keystroke qusote now</h3>
+               <h3 class="title  darkHeading">Get a free Keystroke qusote now</h3>
                <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label custom-form-label">Name</label>
+                <label for="formGroupExampleInput" class="form-label custom-form-label darkHeading">Name</label>
                 <input type="text" class="form-control custom-input-field" id="name" placeholder="John Doe">
               </div>
               <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label custom-form-label">Email</label>
+                <label for="formGroupExampleInput2" class="form-label custom-form-label darkHeading">Email</label>
                 <input type="email" class="form-control custom-input-field" id="email" placeholder="example@mail.com">
                 
               </div>
               <div class="mb-5">
-                <label for="formGroupExampleInput" class="form-label custom-form-label">Phone</label>
+                <label for="formGroupExampleInput" class="form-label custom-form-label darkHeading">Phone</label>
                 <input type="tel" class="form-control custom-input-field" id="tel" placeholder="+123456789">
               </div>
               <div class="mb-3">
@@ -423,8 +425,8 @@
         <div class="container testimonial-main">
           <div class="testimonialHeadings">
             <h3 class="subtitle">Testimonial</h3>
-            <h2 class="title" style="color:var(--dark)">From getting started</h2>
-            <p class="testimonialParagraph">
+            <h2 class="title darkHeading" style="color:var(--dark)">From getting started</h2>
+            <p class="testimonialParagraph darkHeading">
               Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate <br>augue sed eu leo eget risus imperdiet.
             </p>
         </div>
@@ -434,7 +436,7 @@
               <img src="assets/icon/yelp-2.png" alt="yelp">
             </div>
             <div class="testimonial-single-content">
-              <blockquote class="quotes">
+              <blockquote class="quotes darkHeading">
                 “ Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.”
               </blockquote>
               <div class="testimonial-giver d-flex justify-content-start">
@@ -442,7 +444,7 @@
                   <img class="rounded-circle" src="assets/testimonial/testimonial-1.png" alt="profile photo">
                 </div>
                 <div class="profileInfo">
-                  <p class="profileName">John Smith</p>
+                  <p class="profileName darkHeading">John Smith</p>
                   <p class="designation">Executive officer</p>
                 </div>
               </div>
@@ -454,7 +456,7 @@
               <img src="assets/icon/google-2.png" alt="google logo">
             </div>
             <div class="testimonial-single-content">
-              <blockquote class="quotes">
+              <blockquote class="quotes darkHeading">
                 “ Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.”
               </blockquote>
               <div class="testimonial-giver d-flex justify-content-start">
@@ -462,7 +464,7 @@
                   <img class="rounded-circle" src="assets/testimonial/testimonial-2.png" alt="profile photo">
                 </div>
                 <div class="profileInfo">
-                  <p class="profileName">Daniel Smith</p>
+                  <p class="profileName darkHeading">Daniel Smith</p>
                   <p class="designation">Head of Marketing</p>
                 </div>
               </div>
@@ -474,7 +476,7 @@
               <img src="assets/icon/fb-2.png" alt="fb logo">
             </div>
             <div class="testimonial-single-content">
-              <blockquote class="quotes">
+              <blockquote class="quotes darkHeading">
                 “ Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.”
               </blockquote>
               <div class="testimonial-giver d-flex justify-content-start">
@@ -482,7 +484,7 @@
                   <img class="rounded-circle" src="assets/testimonial/testimonial-3.png" alt="profile photo">
                 </div>
                 <div class="profileInfo">
-                  <p class="profileName">Sarah William</p>
+                  <p class="profileName darkHeading">Sarah William</p>
                   <p class="designation">Chief Technical Officer</p>
                 </div>
               </div>
@@ -497,7 +499,7 @@
       <div class="container pricing-main">
         <div class="pricingHeader">
           <h3 class="subtitle text-center">Pricing Plan</h3>
-          <h2 class="title text-center" style="color:var(--dark)">Find the Right Plan.</h2>
+          <h2 class="title text-center darkHeading" style="color:var(--dark)">Find the Right Plan.</h2>
           <p class="pricing-paragraph text-center">
             Flexible pricing options for freelancers<br>
             and design teams.
@@ -512,10 +514,10 @@
             <div class="col-lg-4 pricing-table" data-aos="fade-up" data-aos-duration="500">
               <div class="pricing-table-header">
                 <h3 class="title text-center">Professional</h3>
-                <p class="pricing-paragraph small text-center">A beautiful, simple website</p>
+                <p class="pricing-paragraph small text-center darkHeading">A beautiful, simple website</p>
               </div>
               <div class="pricing-details">
-                <h3 class="title text-center" style="color: var(--dark)">$<span id="professionalPrice">10.99</span><span class="billing-duration"> /yearly</span></h3>
+                <h3 class="title text-center darkHeading" style="color: var(--dark)">$<span id="professionalPrice">10.99</span><span class="billing-duration"> /yearly</span></h3>
                  <div class="getting-started-link d-flex justify-content-center align-items-center">
                   <a href="#" class="btn hexancy-btn">Get Started Today</a>
                  </div>
@@ -534,11 +536,11 @@
             <div class="col-lg-4 pricing-table" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <div class="pricing-table-header">
                 <h3 class="title text-center">Standard</h3>
-                <p class="pricing-paragraph small text-center">Small Team
+                <p class="pricing-paragraph small text-center darkHeading">Small Team
                 </p>
               </div>
               <div class="pricing-details">
-                <h3 class="title text-center" style="color: var(--dark)">$<span id="standardPrice">30.99</span> <span class="billing-duration"> /yearly</span></h3>
+                <h3 class="title text-center darkHeading" style="color: var(--dark)">$<span id="standardPrice">30.99</span> <span class="billing-duration"> /yearly</span></h3>
                  <div class="d-flex justify-content-center align-items-center">
                   <a href="#" class="btn hexancy-btn">Get Started Today</a>
                  </div>
@@ -557,11 +559,11 @@
             <div class="col-lg-4 pricing-table" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
               <div class="pricing-table-header">
                 <h3 class="title text-center">Ultimate</h3>
-                <p class="pricing-paragraph small text-center">Large Team
+                <p class="pricing-paragraph small text-center darkHeading">Large Team
                 </p>
               </div>
               <div class="pricing-details">
-                <h3 class="title text-center" style="color: var(--dark)">$<span id="ultimatePrice">59.99</span><span class="billing-duration"> /yearly</span></h3>
+                <h3 class="title text-center darkHeading" style="color: var(--dark)">$<span id="ultimatePrice">59.99</span><span class="billing-duration"> /yearly</span></h3>
                  <div class="d-flex justify-content-center align-items-center">
                   <a href="#" class="btn hexancy-btn">Get Started Today</a>
                  </div>
@@ -642,7 +644,7 @@
     ---------------------------->
     <section id="callToAction" class="mb-5">
       <div class="topBG">
-        <img src="assets/others/bubble-12.png" alt="">
+        <img class="bubble12" src="assets/others/bubble-12.png" alt="">
       </div>
       <div class="bubble-calltoaction">
         <img class="bubble-callOne" src="assets/others/bubble-15.png" alt="">
@@ -715,52 +717,52 @@
           <div class="footer-content mt-5">
             <div class="row gx-5">
               <div class="col-lg-5" data-aos="fade-up" data-os-duration="500">
-                <h2 class="title" style="color:var(--dark)">Get in touch!</h2>
-                <p class="section-paragraph">Fusce varius, dolor tempor interdum tristique, dui urna bib endum magna, ut ullamcorper purus</p>
+                <h2 class="title darkHeading" style="color:var(--dark)">Get in touch!</h2>
+                <p class="section-paragraph darkHeading">Fusce varius, dolor tempor interdum tristique, dui urna bib endum magna, ut ullamcorper purus</p>
                 <div>
-                 <div class="input-group mb-3">
-                  <span class="input-group-text custom-input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope custom-email"></i></span>
-                  <input type="email" class="form-control custom-input-field" placeholder="Email address" aria-label="" aria-describedby="button-addon2">
+                 <div class="subscribeform input-group mb-3">
+                  <span class="input-group-text custom-input-group-text noBoxShadow" id="basic-addon1"><i class="fa-solid fa-envelope custom-email"></i></span>
+                  <input type="email" class="form-control custom-input-field noBoxShadow" placeholder="Email address" aria-label="" aria-describedby="button-addon2">
                   <button class="btn btn-outline-primary hexancy-btn" type="button" id="button-addon2">Subscribe</button>
                 </div>
                 </div>
               </div>
                <div class="col-lg-3 col-12" data-aos="fade-up" data-os-duration="700" data-aos-delay="200">
-                <h4 class="footer-category-header">Services</h4>
+                <h4 class="footer-category-header darkHeading">Services</h4>
                 <ul class="service">
                   <a href="#">
-                    <li>Logo & Branding</li>
+                    <li class="darkHeading">Logo & Branding</li>
                   </a>
                   <a href="#">
-                    <li>Website Development</li>
+                    <li class="darkHeading">Website Development</li>
                   </a>
                   <a href="#">
-                    <li>Mobile App Development</li>
+                    <li class="darkHeading">Mobile App Development</li>
                   </a>
                   <a href="#">
-                    <li>Search Engine Optimization</li>
+                    <li class="darkHeading">Search Engine Optimization</li>
                   </a>
                   <a href="#">
-                    <li>Pay-Per-Click</li>
+                    <li class="darkHeading">Pay-Per-Click</li>
                   </a>
                   <a href="#">
-                    <li>Social Media Marketing</li>
+                    <li class="darkHeading">Social Media Marketing</li>
                   </a>
                 </ul>
 
                </div>
 
                <div class="col-lg-2 col-12" data-aos="fade-up" data-os-duration="900" data-aos-delay="300">
-                <h4 class="footer-category-header">Resources</h4>
+                <h4 class="footer-category-header darkHeading">Resources</h4>
                 <ul class="service">
                   <a href="#">
-                    <li>Blog</li>
+                    <li class="darkHeading">Blog</li>
                   </a>
                   <a href="#">
-                    <li>Case Studies</li>
+                    <li class="darkHeading">Case Studies</li>
                   </a>
                   <a href="#">
-                    <li>Portfolio</li>
+                    <li class="darkHeading">Portfolio</li>
                   </a>
                   
                 </ul>
@@ -768,16 +770,16 @@
                </div>
 
                <div class="col-lg-2 col-12" data-aos="fade-up" data-os-duration="1100" data-aos-delay="400">
-                <h4 class="footer-category-header">Support</h4>
+                <h4 class="footer-category-header darkHeading">Support</h4>
                 <ul class="service">
                   <a href="#">
-                    <li>Contact</li>
+                    <li class="darkHeading">Contact</li>
                   </a>
                   <a href="#">
-                    <li>Privacy Policy</li>
+                    <li class="darkHeading">Privacy Policy</li>
                   </a>
                   <a href="#">
-                    <li>Terms of Use</li>
+                    <li class="darkHeading">Terms of Use</li>
                   </a>
                   
                 </ul>
@@ -788,11 +790,11 @@
           <div class="footer-bottom mt-4 d-flex justify-content-between align-itmes-lg-center">
             
            <div>
-            <p class="section-paragraph">© 2022. All rights reserved by Sourav Ghose.</p>
+            <p class="section-paragraph darkHeading">© 2022. All rights reserved by Sourav Ghose.</p>
            </div>
             <div class="footer-links">
-              <a href="#" class="me-3">Privacy Policy</a>
-              <a href="#" class="me-3">Terms of Use</a>
+              <a href="#" class="me-3 darkHeading">Privacy Policy</a>
+              <a href="#" class="me-3 darkHeading">Terms of Use</a>
             </div>
           </div>
         </div>
@@ -811,5 +813,6 @@
     <script src="js/jquery.countup.min.js"></script>
     <!-- custom js -->
     <script src="js/app.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 </html>
